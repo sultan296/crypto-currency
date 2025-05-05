@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Roboto", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url(./images/background.png) no-repeat center;
+    background-size: auto;
+    padding: 8px 112px;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 10vh;
+
+    & .first-section {
+        display: flex;
+        align-items: center;
+
+        & img {
+            width: 3em;
+        }
+
+        & ul {
+            display: flex;
+            align-items: center;
+        }
+
+        & li {
+            list-style: none;
+            margin: 0 1em;
+            cursor: pointer;
+        }
+    }
+
+    & button {
+        background-color: transparent;
+        color: white;
+        outline: none;
+        width: 6.5em;
+        height: 2.7em;
+        border-radius: 15px;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+}
+
+main {
+
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .content {
+
+        & h1 {
+            color: white;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.188em;
+            font-family: "Roboto", sans-serif;
+        }
+
+        & span {
+            color: orange;
+        }
+
+        & p {
+            color: white;
+            font-size: 14px;
+            margin: 1.5em 0;
+        }
+
+        & button {
+            background-color: orange;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            width: 10em;
+            height: 2.5em;
+            letter-spacing: 0.055em;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}
+
+.coins {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .coinBox {
+        width: auto;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 4.5em;
+    margin: 0 1em;
+    padding: 0 0.5em 0 0;
+
+        & img {
+            width: 3em;
+            margin: 0.5em 1em;
+        }
+
+        & .coin {
+            display: grid;
+            & p {
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.065em;
+            }
+
+            & span {
+                color: orange;
+                font-size: 12px;
+            }
+        }
+    }
+}
